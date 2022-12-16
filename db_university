@@ -1,0 +1,51 @@
+1
+
+SELECT `date_of_birth`
+FROM `students`
+WHERE `date_of_birth` LIKE '1990%';
+
+
+2
+
+SELECT `cfu`
+FROM `courses`
+WHERE `cfu` > 10;
+
+
+3
+
+SELECT `date_of_birth`
+FROM `students`
+WHERE `date_of_birth` <= '1992-12-16';
+
+
+4
+
+SELECT `period`, `year`
+FROM `courses`
+WHERE `period` = 'I semestre' AND `year` = 1;
+
+5
+
+SELECT `hour`, `date`
+FROM `exams`
+WHERE `date` = '2020-06-20' AND `hour` >= '14:00:00';
+
+
+6
+
+SELECT `level`
+FROM `degrees`
+WHERE `level` = 'magistrale';
+
+
+7
+
+SELECT COUNT(`id`)
+FROM `departments`;
+
+8
+
+SELECT COUNT(`id`), `phone`
+FROM `teachers`
+WHERE `phone` IS NULL;
